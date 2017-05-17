@@ -3,16 +3,15 @@ A Google Sheets script that will take a sheet in a specific format and return JS
 
 ## Installing
 
-1. Open your sheet.
+1. Import the sheet "template.xlsx" to Google Docs and open it.
 2. Go to **Tools -> Script Editor**
 3. Copy `Code.js`, make your edits if needed, and **Save**.
 
 ## Usage
 
-1. Import the sheet "template.xlsx" to Google Docs and open it.
-2. Go to **I18N Export** and select your **Get JSON Data**.
-3. Copy JSON text and use https://jsonformatter.org to format it,
-4. For every language take the content object and copy into the matching file in konfetti project diretory `www/locale`
+1. Go to **I18N Export** and select your **Get JSON Data**.
+2. Copy JSON text and use https://jsonformatter.org to format it,
+3. For every language take the content object and copy into the matching file in konfetti project diretory `www/locale`
 
 
 ## License: MIT
