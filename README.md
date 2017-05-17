@@ -3,7 +3,7 @@ A Google Sheets script that will take a sheet in a specific format and return JS
 
 ## Installing
 
-1. Import the sheet "template.xlsx" to Google Docs and open it.
+1. Import the sheet `template.xlsx` to Google Docs and open it.
 2. Go to **Tools -> Script Editor**
 3. Copy `Code.js`, make your edits if needed, and **Save**.
 
