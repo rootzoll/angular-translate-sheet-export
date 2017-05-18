@@ -1,5 +1,8 @@
-# localizable-sheet-script
-A Google Sheets script that will take a sheet in a specific format and return JSON data to be used within the JS Angular i18n if the konfetti app. 
+# Angular Translate Google Sheet export
+
+A Google Sheets script that will take a sheet in a specific format and return JSON i18N data to be used for the "Angular Translate" framework (Angular 1.x) - see https://github.com/angular-translate/angular-translate
+
+We use it in our konfetti project to work with our translators together in a easy way. We invite them to the Google Sheet, they can add their translations in a familiar environment and we use the script to export the translation and paste them into our konfetti project: https://github.com/rootzoll/konfetti-app
 
 ## Installing
 
