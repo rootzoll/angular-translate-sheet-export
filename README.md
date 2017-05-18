@@ -1,4 +1,4 @@
-# Angular Translate Google Sheet export
+# Angular Translate Google Sheet Export
 
 A Google Sheets script that will take a sheet in a specific format and return JSON i18N data to be used for the "Angular Translate" framework (Angular 1.x) - see https://github.com/angular-translate/angular-translate
 
