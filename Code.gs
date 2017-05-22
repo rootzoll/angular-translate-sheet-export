@@ -13,7 +13,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('I18N Export')
-      .addItem('Get JSON Data', 'exportSheet')
+      .addItem('angular-translate JS file', 'exportSheet')
       .addToUi();
 }
 
@@ -67,22 +67,24 @@ function makeString(object) {
      // add lang meta data
      var langData = "";
      if (i>1) langData += ",";
-     langData += '{ "file" : "lang-'+object[1][i]+'.json", "content" : {';
+     langData += ' { "locale" : "'+object[2][i]+'",\n "displayname": "'+object[1][i]+'",\n "direction": "'+object[3][i]+'",\n "translations" : {\n';
      
      // add lang translations
-     for(var j=2; j<object.length; j++) {
-       if (j>2) langData += ",";
-       langData += '"'+object[j][0]+'" : "'+object[j][i]+'"';
+     for(var j=4; j<object.length; j++) {
+       if (j>4) langData += ",\n";
+       langData += '  "'+object[j][0]+'" : "'+object[j][i]+'"';
      }
      
-    langData += '}}';
+    langData += '  }\n }';
     i18nData += langData;
    } 
   
   // TODO: get all authors (remove doubles and emails)
   var credits = "TODO";
   
-  var exportString = '{"i18nData": ['+i18nData+'], "credits" : "'+credits+'"}';
+  var exportString = '// copy this content (CTRL+A) and place it into file www/locale/i18n-data.js\n';
+  exportString = '// MAKE NO PERMANENT CHANGES TO THIS FILE - ALWAYS EDIT Google Sheet AND EXPORT AGAIN\n';
+  exportString += 'window.i18nData = {\n"i18n": [\n'+i18nData+'],\n"credits" : "'+credits+'"}';
   
   return exportString;
 }
