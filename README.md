@@ -10,12 +10,15 @@ We use it in our konfetti project to work with our translators together in a eas
 2. Go to **Tools -> Script Editor**
 3. Copy `Code.js`, make your edits if needed, and **Save**.
 
-## Usage
+## Usage with Konfetti Project
 
-1. Go to **I18N Export** and select your **Get JSON Data**.
-2. Copy JSON text and use https://jsonformatter.org to format it,
-3. For every language take the content object and copy into the matching file in konfetti project diretory `www/locale`
+1. Go to **I18N Export** and select as **angular-translate JS file**.
+2. Copy the content (with CTRL+A) and past it into the file `/www/locale/i18n-data.js`
+3. Done :)
 
+## How to use it in your own project
+
+Take a look how the https://github.com/rootzoll/konfetti-app is doing it in detail. To summarize: The file `/www/locale/i18n-data.js` will be loaded as normal JS script in the index.html - so all your translation data gets stored in global `window.i18nData` variable. Then in app.js config the app iterates thru all available languages and injects them into the `$translateProvider`.
 
 ## License: MIT
 
