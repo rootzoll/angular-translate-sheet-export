@@ -2,18 +2,21 @@
 
 A Google Sheets script that will take a sheet in a specific format and return JSON i18N data to be used for the "Angular Translate" framework (Angular 1.x) - see https://github.com/angular-translate/angular-translate
 
-We use it in our konfetti project to work with our translators together in a easy way. We invite them to the Google Sheet, they can add their translations in a familiar environment and we use the script to export the translation and paste them into our konfetti project: https://github.com/rootzoll/konfetti-app
+We use it in our konfetti project to work with our translators together in a easy way. We invite them to the Google Sheet, they can add their translations in a familiar environment and we use the script to export the translation and paste them into our konfetti App https://github.com/rootzoll/konfetti-app and the Konfetti Server https://github.com/rootzoll/konfetti-api
 
 ## Installing
 
 1. Import the sheet `template.xlsx` to Google Docs and open it.
 2. Go to **Tools -> Script Editor**
 3. Copy `Code.js`, make your edits if needed, and **Save**.
+4. Reload Sheet
 
 ## Usage with Konfetti Project
 
 1. Go to **I18N Export** and select as **angular-translate JS file**.
-2. Copy the content (with CTRL+A) and past it into the file `/www/locale/i18n-data.js`
+2. Copy the content (with CTRL+A) and paste it into the file `/www/locale/i18n-data.js` of Konfetti App
+1. Go to **I18N Export** and select as **java properties**.
+2. Copy the content (with CTRL+A) and paste it into the matching files of Konfetti Server
 3. Done :)
 
 ## How to use it in your own project
