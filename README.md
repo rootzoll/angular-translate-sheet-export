@@ -22,6 +22,7 @@ We use it in our konfetti project to work with our translators together in a eas
 ## Video Tutorials showing how to use in Konfetti Project
 
 TRANSLATOR PERSPEKTIVE : Helping on App Translation -> https://youtu.be/_CzJtsV7zA0
+
 PROGRAMMER PERSPEKTIVE: App/Server Translations for Programmers --> https://youtu.be/5lSLC2RUsjc
 
 ## How to use it in your own project
