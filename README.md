@@ -19,6 +19,11 @@ We use it in our konfetti project to work with our translators together in a eas
 2. Copy the content (with CTRL+A) and paste it into the matching files of Konfetti Server
 3. Done :)
 
+## Video Tutorials showing how to use in Konfetti Project
+
+TRANSLATOR PERSPEKTIVE : Helping on App Translation -> https://youtu.be/_CzJtsV7zA0
+PROGRAMMER PERSPEKTIVE: App/Server Translations for Programmers --> https://youtu.be/5lSLC2RUsjc
+
 ## How to use it in your own project
 
 Take a look how the https://github.com/rootzoll/konfetti-app is doing it in detail. To summarize: The file `/www/locale/i18n-data.js` will be loaded as normal JS script in the index.html - so all your translation data gets stored in global `window.i18nData` variable. Then in app.js config the app iterates thru all available languages and injects them into the `$translateProvider`.
